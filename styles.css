@@ -1,0 +1,66 @@
+body {
+    background-color: lightgrey;
+    margin: 0 auto;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+header, footer{
+    background-color: white;
+    padding: 10px;
+
+    
+}
+
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+h1, footer p {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 500px;
+    margin: 80px auto;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.cardHeader, .cardFooter {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.cardTitle, .cardCounter {
+    width: 50%;
+}
+
+.cardCounter {
+    align-self: flex-end;
+    text-align: end;
+    color: lightgray;
+}
+
+.cardComment::after {
+    content: ' #Instagramish';
+    font-weight: 800;
+}
+
+.cardImage {
+    min-width: 100%;
+    max-width: 100%;
+    
+    max-height: 500px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 30px 10px; 
+    }
+}
